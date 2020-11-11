@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+	
+	<tiles-definitions>
+		<definition name="baseDef" template="/WEB-INF/pages/layout.jsp">
+			<put-attribute name="title" type="String"/>
+			<put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
+			<put-attribute name="menu" value="/WEB-INF/pages/menu.jsp"/>
+			<put-attribute name="body" value=""/>
+			<put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
+		</definition>
+		<definition name="homePage" extends="baseDef">
+			<put-attribute name="title" value="Home"/>
+			<put-attribute name="body" value="/WEB-INF/pages/home.jsp"/>
+		</definition>
+		<definition name="facultiesPage" extends="baseDef">
+			<put-attribute name="title" value="Faculties"/>
+			<put-attribute name="body" value="/WEB-INF/pages/faculties.jsp"/>
+		</definition>
+		<definition name="coursesPage" extends="baseDef">
+			<put-attribute name="title" value="Courses"/>
+			<put-attribute name="body" value="/WEB-INF/pages/courses.jsp"/>
+		</definition>
+		<definition name="contactUsPage" extends="baseDef">
+			<put-attribute name="title" value="Contact Us"/>
+			<put-attribute name="body" value="/WEB-INF/pages/contactUs.jsp"/>
+		</definition>
+		
+	</tiles-definitions>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>nnp</groupId>
+	<artifactId>MVCProj22-Boot-FirstApp</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>MVCProj22-Boot-FirstApp</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>13</java.version>
+	</properties>
+
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.springframework.boot</groupId> -->
+<!-- 					<artifactId>spring-boot-starter-tomcat</artifactId> -->
+<!-- 				</exclusion> -->
+<!-- 			</exclusions> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jetty -->
+<!-- <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jetty</artifactId>
+</dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-undertow -->
+<!-- <dependency> -->
+<!--     <groupId>org.springframework.boot</groupId> -->
+<!--     <artifactId>spring-boot-starter-undertow</artifactId> -->
+<!-- </dependency> -->
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
+<!-- <dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/apache-jsp -->
+<!-- <dependency> -->
+<!--     <groupId>org.eclipse.jetty</groupId> -->
+<!--     <artifactId>apache-jsp</artifactId> -->
+<!--     </dependency> -->
+    
+<!-- https://mvnrepository.com/artifact/io.undertow/undertow-jsp -->
+<!-- <dependency>
+    <groupId>io.undertow</groupId>
+    <artifactId>undertow-jsp</artifactId>
+    <version>1.0.0.Beta27</version>
+</dependency> -->
+
+    
+		
+	</dependencies>
+
+
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

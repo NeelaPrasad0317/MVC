@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- HandlerMapping -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="welcome.htm">whc</prop>
+				<prop key="getCountries.htm">clc</prop>
+			</props>
+		</property>
+	</bean>
+
+<!-- welcomeHomeController cfg -->
+	<bean id="whc" class="com.nnp.controller.WelcomeHomeController"/>
+	
+<!-- 	ViewResolver cfg -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+<!-- 	ContriesListController cfg -->
+	<bean id="clc" class="com.nnp.controller.ContriesListController"/>
+</beans>
